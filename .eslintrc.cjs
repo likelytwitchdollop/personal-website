@@ -9,6 +9,7 @@ module.exports = {
 		'plugin:@typescript-eslint/recommended',
 		'airbnb',
 		'airbnb-typescript',
+		'plugin:storybook/recommended',
 		'prettier',
 	],
 	overrides: [
@@ -31,7 +32,13 @@ module.exports = {
 		// Disable React import.
 		'react/react-in-jsx-scope': 0,
 		// Sort imports.
-		'sort-imports': ['warn', { ignoreCase: true, ignoreDeclarationSort: true }],
+		'sort-imports': [
+			'warn',
+			{
+				ignoreCase: true,
+				ignoreDeclarationSort: true,
+			},
+		],
 		'import/order': [
 			'warn',
 			{
