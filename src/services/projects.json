@@ -1,0 +1,54 @@
+[
+	{
+		"name": "Room Homepage",
+		"description": "A responsive and accessible project built as a solution for a Frontend Mentor challenge.",
+		"technologies": ["React", "Storybook", "TailwindCSS"],
+		"images": {
+			"desktop": "./assets/images/room-homepage-desktop@2x.png",
+			"mobile": "./assets/images/room-homepage-mobile@2x.png"
+		},
+		"links": {
+			"github": "https://github.com/frontend-mentor-junior-projects/room-homepage",
+			"liveDemo": "https://ltd-room-homepage.netlify.app"
+		}
+	},
+	{
+		"name": "Insure Landing Page",
+		"description": "A responsive and accessible project built as a solution for a Frontend Mentor challenge.",
+		"technologies": ["React", "Storybook", "TailwindCSS"],
+		"images": {
+			"desktop": "./assets/images/insure-landing-page-desktop@2x.png",
+			"mobile": "./assets/images/insure-landing-page-mobile@2x.png"
+		},
+		"links": {
+			"github": "https://github.com/frontend-mentor-junior-projects/insure-landing-page",
+			"liveDemo": "https://ltd-insure-landing-page.netlify.app"
+		}
+	},
+	{
+		"name": "News Homepage",
+		"description": "A responsive and accessible project built as a solution for a Frontend Mentor challenge.",
+		"technologies": ["React", "Storybook", "TailwindCSS"],
+		"images": {
+			"desktop": "./assets/images/news-homepage-desktop@2x.png",
+			"mobile": "./assets/images/news-homepage-mobile@2x.png"
+		},
+		"links": {
+			"github": "https://github.com/frontend-mentor-junior-projects/news-homepage",
+			"liveDemo": "https://ltd-news-homepage.netlify.app"
+		}
+	},
+	{
+		"name": "Sunnyside Agency Landing Page",
+		"description": "A responsive and accessible project built as a solution for a Frontend Mentor challenge.",
+		"technologies": ["React", "Storybook", "TailwindCSS"],
+		"images": {
+			"desktop": "./assets/images/sunnyside-agency-landing-page-desktop@2x.png",
+			"mobile": "./assets/images/sunnyside-agency-landing-page-mobile@2x.png"
+		},
+		"links": {
+			"github": "https://github.com/frontend-mentor-junior-projects/sunnyside-agency-landing-page",
+			"liveDemo": "https://ltd-sunnyside-agency-landing-page.netlify.app/"
+		}
+	}
+]
