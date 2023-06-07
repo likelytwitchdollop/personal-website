@@ -42,10 +42,16 @@ const ContactSection = () => {
 			<PageTitle>.contact</PageTitle>
 			<p className='text-xl'>
 				Currently looking for <b>new and exciting opportunities</b> to <br />
-				build <Tooltip>👏🏾</Tooltip> things to release into the wild. If you're
-				looking for an <br />
-				experienced <Tooltip>multi-faceted</Tooltip> software engineering
-				professional
+				build{' '}
+				<Tooltip id='hands-clapping' content=''>
+					👏🏾
+				</Tooltip>{' '}
+				things to release into the wild. If you're looking for an <br />
+				experienced{' '}
+				<Tooltip id='multi-faceted' content=''>
+					multi-faceted
+				</Tooltip>{' '}
+				software engineering professional
 				<br />
 				who is:
 			</p>

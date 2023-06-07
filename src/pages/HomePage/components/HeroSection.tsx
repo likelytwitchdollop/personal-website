@@ -40,7 +40,11 @@ const HeroSection = () => {
 					}}
 					className='text-[26px] text-primary-100 text-right tracking-[0.2px]'
 				>
-					Building <Tooltip>👏🏾</Tooltip> things for the web
+					Building{' '}
+					<Tooltip id='hands-clapping' content=''>
+						👏🏾
+					</Tooltip>{' '}
+					things for the web
 				</motion.p>
 			</div>
 
@@ -59,7 +63,13 @@ const HeroSection = () => {
 				<p className='text-center text-lg mb-[64px]'>
 					A Full-Stack (Javascript/TypeScript) Engineer
 					<br />
-					focused on building <Tooltip>exceptional</Tooltip>
+					focused on building{' '}
+					<Tooltip
+						id='exceptional'
+						content='All things accessible and responsive; catering for all users of the web.'
+					>
+						exceptional
+					</Tooltip>
 					<br />
 					digital products.
 				</p>
