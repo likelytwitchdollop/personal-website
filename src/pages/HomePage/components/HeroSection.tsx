@@ -64,10 +64,7 @@ const HeroSection = () => {
 					A Full-Stack (Javascript/TypeScript) Engineer
 					<br />
 					focused on building{' '}
-					<Tooltip
-						id='exceptional'
-						content='All things accessible and responsive; catering for all users of the web.'
-					>
+					<Tooltip id='exceptional' content=''>
 						exceptional
 					</Tooltip>
 					<br />
