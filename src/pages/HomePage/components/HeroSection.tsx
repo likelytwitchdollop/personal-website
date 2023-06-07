@@ -40,7 +40,7 @@ const HeroSection = () => {
 					}}
 					className='text-[26px] text-primary-100 text-right tracking-[0.2px]'
 				>
-					Building <Tooltip>👌🏾</Tooltip> things for the web
+					Building <Tooltip>👏🏾</Tooltip> things for the web
 				</motion.p>
 			</div>
 

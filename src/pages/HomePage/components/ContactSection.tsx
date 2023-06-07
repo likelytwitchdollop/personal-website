@@ -13,7 +13,7 @@ const POINTS = [
 		long: 'passionate about software engineering',
 	},
 	{
-		short: 'builds 👌🏾 digital products',
+		short: 'builds 👏🏾 digital products',
 		long: 'builds engaging and impactful digital products',
 	},
 ]
@@ -25,8 +25,8 @@ const ContactSection = () => {
 		<section id='contact' className='mb-[240px]'>
 			<PageTitle>.contact</PageTitle>
 			<p className='text-xl'>
-				Currently on a hunt for <b>new and exciting opportunities</b> to <br />
-				build <Tooltip>👌🏾</Tooltip> things to release into the wild. If you're
+				Currently looking for <b>new and exciting opportunities</b> to <br />
+				build <Tooltip>👏🏾</Tooltip> things to release into the wild. If you're
 				looking for an <br />
 				experienced <Tooltip>multi-faceted</Tooltip> software engineering
 				professional
