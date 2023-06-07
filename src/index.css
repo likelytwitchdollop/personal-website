@@ -5,3 +5,17 @@
 html {
 	scroll-behavior: smooth;
 }
+
+.blinking-cursor::after {
+	content: ' |';
+	animation: blink 1.2s step-end infinite;
+}
+@keyframes blink {
+	from,
+	to {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+}

@@ -1,25 +1,41 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
-import { Button, PageTitle, Tooltip } from 'components'
-import Dot from 'components/Dot'
+import { Button, Dot, PageTitle, Tooltip } from 'components'
 import { motion } from 'framer-motion'
 import utils from 'utils'
 
 const POINTS = [
-	{ short: '👀 orientated', long: 'detail orientated' },
 	{
-		short: 'passionate about 💻🔨',
-		long: 'passionate about software engineering',
+		short: 'detail orientated',
+		long: 'high code quality requires high quality standards',
+		addon: 'aka: self-ware perfectionism',
 	},
 	{
-		short: 'builds 👏🏾 digital products',
-		long: 'builds engaging and impactful digital products',
+		short: 'passionate about software engineering',
+		long: 'code should read like well-written prose',
+		addon: 'because going fast means going well',
+	},
+	{
+		short: 'builds engaging and impactful digital products',
+		long: 'what we build can shape the future',
+		addon: 'we can make it a good one',
 	},
 ]
 
 const ContactSection = () => {
 	const [selectedPoint, setSelectedPoint] = useState(POINTS[0])
+	const [text, setText] = useState('')
+
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			setText(selectedPoint.long.slice(0, text.length + 1))
+		}, 100)
+
+		return () => {
+			return clearTimeout(timeout)
+		}
+	}, [text])
 
 	return (
 		<section id='contact' className='mb-[240px]'>
@@ -35,15 +51,28 @@ const ContactSection = () => {
 			</p>
 
 			<div className='mb-[200px]'>
-				<motion.span
+				<motion.div
 					key={selectedPoint.short}
-					initial={{ opacity: 0, x: 10 }}
-					animate={{ opacity: 100, x: 0 }}
-					exit={{ opacity: 0, x: -100 }}
-					className='block text-[64px] text-center my-[240px]'
+					className='text-center my-[240px]'
 				>
-					{selectedPoint.short} <motion.span aria-hidden>|</motion.span>
-				</motion.span>
+					<span className='block text-[64px] text-center blinking-cursor mb-12'>
+						{text}
+					</span>
+
+					<motion.span
+						initial={{ opacity: 0 }}
+						animate={{
+							opacity: 100,
+							transition: {
+								duration: 1,
+								delay: selectedPoint.long.length * 0.115,
+							},
+						}}
+						className='text-[24px]'
+					>
+						{selectedPoint.addon}
+					</motion.span>
+				</motion.div>
 
 				<div className='text-xl flex flex-row justify-between items-center'>
 					{POINTS.map((point) => {
@@ -55,6 +84,7 @@ const ContactSection = () => {
 									type='button'
 									onClick={() => {
 										setSelectedPoint(point)
+										setText('')
 									}}
 								>
 									<span
@@ -62,9 +92,10 @@ const ContactSection = () => {
 											isSelected ? 'text-black' : 'text-primary-100'
 										}`}
 									>
-										{point.long}
+										{point.short}
 									</span>
 								</button>
+
 								<Dot />
 							</>
 						)
