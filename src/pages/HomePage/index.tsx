@@ -1,6 +1,4 @@
-import { Header, ScrollToTop } from 'components'
-import Cursor from 'components/Cursor'
-import Footer from 'components/Footer'
+import { Cursor, Footer, Header, ScrollToTop } from 'components'
 
 import { ContactSection, HeroSection, WorkSection } from './components'
 
