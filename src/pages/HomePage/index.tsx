@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import { Header } from 'components'
+import Cursor from 'components/Cursor'
 import Footer from 'components/Footer'
 import { AnimatePresence, motion } from 'framer-motion'
 
@@ -35,6 +36,8 @@ const HomePage = () => {
 
 	return (
 		<main className='max-w-6xl mx-auto relative'>
+			<Cursor />
+
 			<span className='flex flex-col items-center justify-center xl:hidden min-h-screen'>
 				Coming soon.
 			</span>
