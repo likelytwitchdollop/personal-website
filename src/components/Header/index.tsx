@@ -44,7 +44,13 @@ const Header = () => {
 						<a href='#contact'>.contact</a>
 					</li>
 					<li className='hover:font-bold transition duration-300 ease-in-out'>
-						<a href='htts://cynthiamahofa.vercel.com'>.blog</a>
+						<a
+							href='https://cynthiamahofa.vercel.app'
+							target='_blank'
+							rel='noreferrer'
+						>
+							.blog
+						</a>
 					</li>
 				</ul>
 			</nav>
