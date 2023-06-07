@@ -43,15 +43,8 @@ const Header = () => {
 					<li className='hover:font-bold transition duration-300 ease-in-out'>
 						<a href='#contact'>.contact</a>
 					</li>
-					<li className='text-primary-100'>
-						<a
-							href='/'
-							onClick={(event) => {
-								event?.preventDefault()
-							}}
-						>
-							.blog
-						</a>
+					<li className='hover:font-bold transition duration-300 ease-in-out'>
+						<a href='htts://cynthiamahofa.vercel.com'>.blog</a>
 					</li>
 				</ul>
 			</nav>
