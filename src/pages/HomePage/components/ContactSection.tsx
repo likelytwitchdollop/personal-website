@@ -40,7 +40,7 @@ const ContactSection = () => {
 	return (
 		<section id='contact' className='mb-[240px]'>
 			<PageTitle>.contact</PageTitle>
-			<p className='text-xl'>
+			<p className='text-xl mb-12'>
 				Currently looking for <b>new and exciting opportunities</b> to <br />
 				build{' '}
 				<Tooltip id='hands-clapping' content=''>
@@ -57,29 +57,6 @@ const ContactSection = () => {
 			</p>
 
 			<div className='mb-[200px]'>
-				<motion.div
-					key={selectedPoint.short}
-					className='text-center my-[240px]'
-				>
-					<span className='block text-[64px] text-center blinking-cursor mb-12'>
-						{text}
-					</span>
-
-					<motion.span
-						initial={{ opacity: 0 }}
-						animate={{
-							opacity: 100,
-							transition: {
-								duration: 1,
-								delay: selectedPoint.long.length * 0.115,
-							},
-						}}
-						className='text-[24px]'
-					>
-						{selectedPoint.addon}
-					</motion.span>
-				</motion.div>
-
 				<div className='text-xl flex flex-row justify-between items-center'>
 					{POINTS.map((point) => {
 						const isSelected = point.short === selectedPoint.short
@@ -107,6 +84,29 @@ const ContactSection = () => {
 						)
 					})}
 				</div>
+
+				<motion.div
+					key={selectedPoint.short}
+					className='text-center my-[240px]'
+				>
+					<span className='block text-[64px] text-center blinking-cursor mb-12'>
+						{text}
+					</span>
+
+					<motion.span
+						initial={{ opacity: 0 }}
+						animate={{
+							opacity: 100,
+							transition: {
+								duration: 1,
+								delay: selectedPoint.long.length * 0.115,
+							},
+						}}
+						className='text-[24px]'
+					>
+						{selectedPoint.addon}
+					</motion.span>
+				</motion.div>
 			</div>
 
 			<div className='flex flex-col items-center'>
