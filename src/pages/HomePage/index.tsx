@@ -4,27 +4,28 @@ import { ContactSection, HeroSection, WorkSection } from './components'
 
 const HomePage = () => {
 	return (
-		<main className='max-w-6xl mx-auto relative'>
+		<div className='max-w-6xl mx-auto relative'>
 			<Cursor />
+			<ScrollToTop />
 
-			<span className='flex flex-col items-center justify-center xl:hidden min-h-screen'>
-				Coming soon.
-			</span>
+			<Header />
 
-			<section className='hidden xl:block'>
-				<Header />
+			<main>
+				<span className='flex flex-col items-center justify-center xl:hidden min-h-screen'>
+					Coming soon.
+				</span>
 
-				<HeroSection />
+				<section className='hidden xl:block'>
+					<HeroSection />
 
-				<WorkSection />
+					<WorkSection />
 
-				<ContactSection />
+					<ContactSection />
+				</section>
+			</main>
 
-				<Footer />
-
-				<ScrollToTop />
-			</section>
-		</main>
+			<Footer />
+		</div>
 	)
 }
 
