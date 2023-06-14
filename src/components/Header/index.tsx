@@ -5,7 +5,8 @@ import utils from 'utils'
 const Header = () => {
 	return (
 		<header className='h-[100px] flex flex-row justify-between items-center max-w-6xl mx-auto mb-20'>
-			<motion.div
+			<motion.a
+				href='/'
 				initial={{ scale: 100 }}
 				animate={{
 					scale: 1,
@@ -13,8 +14,12 @@ const Header = () => {
 						duration: 1,
 					},
 				}}
-				className='w-12 aspect-square rounded-full bg-black z-[9999]'
-			/>
+				className='block relative w-12 aspect-square rounded-full bg-black
+        after:bg-black-100 after:w-full after:h-full after:rounded-full after:z-[-1] after:absolute after:top-0 after:right-0 after:opacity-0 after:transition after:duration-300 after:ease-out hover:after:opacity-100 hover:after:scale-[1.5]
+        '
+			>
+				<span className='sr-only'>Home</span>
+			</motion.a>
 
 			<nav>
 				<ul className='font-mono font-medium flex flex-row space-x-14'>
