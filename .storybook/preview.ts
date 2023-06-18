@@ -1,6 +1,8 @@
 import 'tailwindcss/tailwind.css'
 import type { Preview } from '@storybook/react'
 
+import { withRouter } from 'storybook-addon-react-router-v6'
+
 const CUSTOM_VIEWPORTS = {
 	mobile375: {
 		name: 'Mobile 375',
@@ -47,6 +49,7 @@ const preview: Preview = {
 			viewports: { ...CUSTOM_VIEWPORTS },
 		},
 	},
+	decorators: [withRouter],
 }
 
 export default preview
