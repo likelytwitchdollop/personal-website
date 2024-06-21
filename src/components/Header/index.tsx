@@ -11,7 +11,7 @@ const Header = () => {
 				target='_blank'
 				rel='noreferrer'
 			>
-				<p>Currently working on helga: skincare made happy</p>
+				<p>Launched helga: skincare made happy! See early progress.</p>
 			</a>
 
 			<div className='h-[100px] flex flex-row justify-between items-center max-w-6xl mx-auto mb-20'>
