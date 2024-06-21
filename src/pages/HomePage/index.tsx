@@ -8,7 +8,9 @@ const HomePage = () => {
 			<Cursor />
 			<ScrollToTop />
 
-			<Header />
+			<div className='hidden xl:block'>
+				<Header />
+			</div>
 
 			<main>
 				<span className='flex flex-col items-center justify-center xl:hidden min-h-screen'>
