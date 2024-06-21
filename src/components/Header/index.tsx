@@ -6,7 +6,7 @@ const Header = () => {
 	return (
 		<header>
 			<a
-				className='full-width font-bold text-sm text-white text-center bg-black h-10 flex flex-col justify-center items-center'
+				className='full-width font-medium text-xs text-white text-center bg-black h-10 flex flex-col justify-center items-center'
 				href='https://www.gethelga.com'
 				target='_blank'
 				rel='noreferrer'
