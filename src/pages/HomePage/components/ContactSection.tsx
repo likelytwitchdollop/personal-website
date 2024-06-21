@@ -8,7 +8,7 @@ import utils from 'utils'
 const POINTS = [
 	{
 		short: 'detail orientated',
-		long: 'high code quality requires high quality standards',
+		long: 'high quality code requires high quality standards',
 		addon: 'aka: self-ware perfectionism',
 	},
 	{
